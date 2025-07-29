@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Environmental_ly | Nature-Inspired Creations</title>
+  <style>
+    /* Reset & Basics */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f7f5f3;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #f7f5f3;
+      padding: 30px 20px 10px;
+      text-align: center;
+      position: static; /* Banner won't follow scroll */
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #777;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background-color: #e5e3df;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Section Titles */
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    /* Product / Gallery Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #e0dedb;
+      padding: 15px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      border: 1px solid #ddd;
+      height: auto;
+    }
+
+    .card:hover {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    /* Blog */
+    article {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+
+    article h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    article p {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    article a {
+      color: #4a4a4a;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #e5e3df;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Environmental_ly</h1>
+    <nav>
+      <ul>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Mindful Art & Upcycled Design</h2>
+    <p>Handmade with love. Inspired by nature. Designed for conscious living.</p>
+  </section>
+
+  <section id="shop" class="section">
+    <h3>Featured Creations</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="your-product-1.jpg" alt="Handcrafted Necklace">
+        <p>Upcycled Fabric Necklace</p>
+      </div>
+      <div class="card">
+        <img src="your-product-2.jpg" alt="Crochet Wall Hanging">
+        <p>Crochet Wall Hanging</p>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </section>
+
+  <section id="blog" class="section">
+    <h3>From the Blog</h3>
+    <article>
+      <h4>Why I Choose Upcycling Over Fast Fashion</h4>
+      <p>A reflection on my journey with sustainability, and the joy of reimagining materials...</p>
+      <a href="#">Read More</a>
+    </article>
+  </section>
+
+  <section id="gallery" class="section">
+    <h3>Photography</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="photo1.jpg" alt="Nature photography">
+      </div>
+      <div class="card">
+        <img src="photo2.jpg" alt="Creative product display">
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact: hello@environmental-ly.com</p>
+    <p>© 2025 Environmental_ly. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
